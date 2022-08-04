@@ -25,9 +25,11 @@ Command: nano my-playbook.yml
 
 <img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG">
 
- Ansible hosts
+Ansible hosts
 Command: nano hostsAnsible configuration
 Command: nano ansible.cfg
+
+<img width="234" alt="FINAL P3" src="https://user-images.githubusercontent.com/94266251/182843989-bfec1645-c6f5-4d9f-990e-2b52f8ed26e8.PNG">
 
 
 Ansible ELK Installation and VM Configuration

@@ -3,6 +3,7 @@
 
 
 The files in this repository were used to configure the network depicted below.
+
 Project#1_Cloud_Computing.PNG
 
 <img width="364" alt="FINAL P1" src="https://user-images.githubusercontent.com/94266251/182843381-658a703e-b4f8-4787-bb87-a146ba43063e.PNG">
@@ -26,11 +27,15 @@ Command: nano my-playbook.yml
 <img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG">
 
 Ansible hosts
+
 Command: nano hostsAnsible configuration
-Command: nano ansible.cfg
+
 
 <img width="234" alt="FINAL P3" src="https://user-images.githubusercontent.com/94266251/182843989-bfec1645-c6f5-4d9f-990e-2b52f8ed26e8.PNG">
 
+Command: nano ansible.cfg
+
+<img width="233" alt="FINAL P4" src="https://user-images.githubusercontent.com/94266251/182845679-09b3bd78-6991-4b0a-a11a-fdf8f2232fe6.PNG">
 
 Ansible ELK Installation and VM Configuration
 
@@ -54,22 +59,21 @@ Ansible ELK Installation and VM Configuration
 
 Ansible Filebeat Playbook
 
+
+<img width="236" alt="FINAL P5" src="https://user-images.githubusercontent.com/94266251/182845707-957782b4-16e2-4640-bf51-bffe55a80041.PNG">
+
 Command: nano filebeat-playbook.yml
+
+<img width="239" alt="FINAL P6" src="https://user-images.githubusercontent.com/94266251/182845719-92c1a09f-28c9-40b6-8f3d-afd694295f39.PNG">
 
 
 
 Run filebeat playbook 
 
+<img width="236" alt="FINAL P7" src="https://user-images.githubusercontent.com/94266251/182845740-9f6326ee-336c-4d7e-b889-0825f3c35cb0.PNG">
 
 
-
-
-
-
-
-
-
-
+<img width="237" alt="FINAL P8" src="https://user-images.githubusercontent.com/94266251/182845755-189d66fe-c880-4e57-9ba6-7d9df2d6c73c.PNG">
 
 
 
@@ -78,8 +82,11 @@ Run filebeat playbook
 
 
 Ansible Filebeat Config file
+
 Command: nano filebeat-config.yml
 
+
+<img width="236" alt="FINAL P9" src="https://user-images.githubusercontent.com/94266251/182845774-c204825d-1f8a-4acb-b1c2-275790a27406.PNG">
 
 
 
@@ -103,34 +110,25 @@ Command: nano filebeat-config.yml
 
 
 Ansible Metricbeat Playbook
+
 Command: nano metricbeat-playbook.yml
 
+<img width="235" alt="FINAL P10" src="https://user-images.githubusercontent.com/94266251/182845791-5cc6512d-4eb1-4b3d-81c9-f692fdd9e1ad.PNG">
+
+
+
+
 Run metricbeat 
+
+
+<img width="235" alt="FINAL P11" src="https://user-images.githubusercontent.com/94266251/182845811-74d680d3-a250-4bb1-864f-9a4a0053e299.PNG">
+
 
 
 Ansible Metricbeat Config file
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="234" alt="FINAL P12" src="https://user-images.githubusercontent.com/94266251/182845833-d9ee6e6a-7470-4c05-87a1-d65d58ee49a5.PNG">
 
 
 
@@ -139,7 +137,7 @@ This document contains the following details:
 - Description of the Topology 
 
 - Access Policies
-- ELK Configuration
+-# ELK Configuration
   - Beats in Use: Filebeat and Metricbeat
   - Machines Being Monitored: ELK-VM, Web-1, Web-2, Web-3
 - How to Use the Ansible Build:
@@ -169,7 +167,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Workstation   	| Access Control 	| Public IP     	| Linux            	|   	
 
 
-Access Policies
+#Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -178,6 +176,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 
 Machines within the network can only be accessed by the Workstation and the Jump Box . Which machine did you allow to access your ELK VM?  What was its IP address?Jumpbox; ssh Red_Team_Admin@10.0.0.5 via ssh port 22 and the Workstation 20.211.160.59 via port TCP 5601
 
+<img width="235" alt="FINAL P13" src="https://user-images.githubusercontent.com/94266251/182845851-8dcd4ac0-b06a-4950-864b-39aa0610002b.PNG">
 
 A summary of the access policies in place can be found in the table below.
 
@@ -203,6 +202,7 @@ Set published ports
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+<img width="236" alt="FINAL P14" src="https://user-images.githubusercontent.com/94266251/182845862-c4769c61-66e0-4fa8-a411-c1ae6208efdb.PNG">
 
 
 
@@ -216,6 +216,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 Update the path with the name of your screenshot of docker ps output.
 
+<img width="237" alt="FINAL P15" src="https://user-images.githubusercontent.com/94266251/182845877-ec95a455-9984-49e2-9d0d-64c58f7cf6c6.PNG">
 
 
 Target Machines & Beats
@@ -238,7 +239,7 @@ Copy the filebeat-config.yml and metricbeat-config.yml files
 Update the config files to include the private IP addresses of the ELK Server to the elastic search and kibana sections of the configuration file
 Run the playbook, and on a browser navigate to the ELK Server http://20.210.88.153:5601/app/kibana to check if the installation worked.
 
- Answer the following questions to fill in the blanks
+Answer the following questions to fill in the blanks
 Which file is the playbook?
 
 For ELK VM Configuration:
@@ -255,38 +256,66 @@ Run the playbook using: ansible-playbook filebeat-playbook.yml and navigate to K
 For Metricbeat:
 
 Download Metricbat playbook with command: curl -L -0 https://gist.githubusercontent.com/slape/58541585x1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat>/etc/ansible/files/metricbeat-config.yml
+
 Copy the /etc/ansible/files/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml file to include installer: curl -L -0 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amb64.deb
+
 Update the metricbeat file rename to metricbeat-config.yml you must be at root: root @49d0faf9204b:/etc/ansible/files# then nano metricbeat-config.yml
-Run the playbook, (ansible-playbook metricbeat-playbook.yml) and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked.
- 
-               Which URL do you navigate to in order to check that the ELK server is running? 
-                http://20.210.88.153:5601/app/kibana
+Run the playbook, (ansible-playbook metricbeat-playbook.yml) and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked. Which URL do you navigate to in order to check that the ELK server is running?  http://20.210.88.153:5601/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files:
 
 
 Commands:
+
 ssh Red_Team_Admin@20.211.160.59 (to get into the Jumpbox)
+
 ssh Red_Team_Admin@10.1.0.5  (to get into the ELK-VM)
+
 ssh Red_Team_Admin@10.1.0.6 (to access VM-2)
+
 ssh Red_Team_Admin@10.1.0.9 (to access VM-9)
+
 sudo docker start elk (to start elk)
+
 sudo docker ps (to look for container)
+
 sudo docker start quirky_payne (to start the container)
+
 sudo docker attach quirky_payne (to attach the container)
+
 cd /etc/ansible/ then ls and you see the files (.yml and .config) and directories
+
 cd ansible-playbook install_elk_playbook.yml   (to install playbook)
+
 cd /etc/ansible/roles 
+
 cd ansible-playbook install_filebeat-playbook.yml (to install playbook filebeat playbook)
+
 cd ansible-playbook install_metricbeat-playblook.yml (to install playbook metricbeat playbook)
+
 ssh-keygen to create ssh key
+
 sudo apt-get update (to update all packages)
+
 ansible -m ping all to check the connection of ansible containers
+
 sudo apt install docker.io (to install docker application)
+
 sudo service docker start (to start the docker application)
+
 systemctl status docker (to check the status of the docker application)
+
 sudo docker pull cybersecurity/ansible (to download the docker file)
+
 sudo docker run -ti cybersecurity/bash (to run and create a docker image)
+
+
+
+
+
+
+
+
 
 
 	

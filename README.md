@@ -1,11 +1,11 @@
 # curlyb00ts
-AUTOMATED ELK STACK DEPLOYMENT
- Automated ELK Stack Deployment
+##AUTOMATED ELK STACK DEPLOYMENT
+
 
 The files in this repository were used to configure the network depicted below.
-
 Project#1_Cloud_Computing.PNG
 
+<img width="364" alt="FINAL P1" src="https://user-images.githubusercontent.com/94266251/182843381-658a703e-b4f8-4787-bb87-a146ba43063e.PNG">
 
 
 

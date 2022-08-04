@@ -130,6 +130,8 @@ Ansible Metricbeat Config file
 
 <img width="234" alt="FINAL P12" src="https://user-images.githubusercontent.com/94266251/182845833-d9ee6e6a-7470-4c05-87a1-d65d58ee49a5.PNG">
 
+<img width="235" alt="FINAL P13" src="https://user-images.githubusercontent.com/94266251/182845851-8dcd4ac0-b06a-4950-864b-39aa0610002b.PNG">
+
 
 
 
@@ -155,9 +157,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 -  What does Metricbeat record?Metricbeat  collects metric data from your target servers or it can be used to monitor other beats and ELK stack. This metrics and statistical data collected is then shipped to either Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
+
+
 | Name          	| Function       	| IP Address    	| Operating System 	|   	
-|---------------	|----------------	|---------------	|------------------	|---	|
+|---------------	|----------------	|---------------	|------------------	|	|
 | Jumpbox       	| Gateway        	| 10.1.0.4      	| Linux            	|   	
 | Web-1         	| Web Server     	| 10.1.0.5      	| Linux            	|   	
 | Web-2         	| Web Server     	| 10.1.0.6      	| Linux            	|   	
@@ -176,7 +180,9 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 
 Machines within the network can only be accessed by the Workstation and the Jump Box . Which machine did you allow to access your ELK VM?  What was its IP address?Jumpbox; ssh Red_Team_Admin@10.0.0.5 via ssh port 22 and the Workstation 20.211.160.59 via port TCP 5601
 
-<img width="235" alt="FINAL P13" src="https://user-images.githubusercontent.com/94266251/182845851-8dcd4ac0-b06a-4950-864b-39aa0610002b.PNG">
+
+
+<img width="236" alt="FINAL P14" src="https://user-images.githubusercontent.com/94266251/182845862-c4769c61-66e0-4fa8-a411-c1ae6208efdb.PNG">
 
 A summary of the access policies in place can be found in the table below.
 
@@ -202,7 +208,8 @@ Set published ports
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-<img width="236" alt="FINAL P14" src="https://user-images.githubusercontent.com/94266251/182845862-c4769c61-66e0-4fa8-a411-c1ae6208efdb.PNG">
+
+<img width="237" alt="FINAL P15" src="https://user-images.githubusercontent.com/94266251/182845877-ec95a455-9984-49e2-9d0d-64c58f7cf6c6.PNG">
 
 
 
@@ -216,7 +223,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 Update the path with the name of your screenshot of docker ps output.
 
-<img width="237" alt="FINAL P15" src="https://user-images.githubusercontent.com/94266251/182845877-ec95a455-9984-49e2-9d0d-64c58f7cf6c6.PNG">
+<img width="233" alt="FINAL P16" src="https://user-images.githubusercontent.com/94266251/182850387-18ac2fa5-3eec-4b24-8ea6-b1daa12fb171.PNG">
+
 
 
 Target Machines & Beats

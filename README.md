@@ -70,7 +70,7 @@ Command: `nano filebeat-playbook.yml`
 
 
 
-Run filebeat playbook 
+Run Filebeat Playbook 
 
 <img width="236" alt="FINAL P7" src="https://user-images.githubusercontent.com/94266251/182845740-9f6326ee-336c-4d7e-b889-0825f3c35cb0.PNG">
 
@@ -120,7 +120,7 @@ Command: `nano metricbeat-playbook.yml`
 
 
 
-Run metricbeat 
+Run Metricbeat 
 
 
 <img width="235" alt="FINAL P11" src="https://user-images.githubusercontent.com/94266251/182845811-74d680d3-a250-4bb1-864f-9a4a0053e299.PNG">

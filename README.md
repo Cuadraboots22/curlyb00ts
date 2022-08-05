@@ -177,8 +177,7 @@ The configuration details of each machine may be found below.
 +---------------+----------------+---------------+-------+
 | Workstation   | Access Control | Public IP     | Linux |
 +---------------+----------------+---------------+-------+
-|               |                |               |       |
-+---------------+----------------+---------------+-------+
+
 
 
 

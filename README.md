@@ -18,24 +18,25 @@ The files in this repository were used to configure the network depicted below.
 
 
 
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .config and .yml file may be used to install only certain pieces of it, such as Filebeat.
  
 Ansible Playbook
 
 Command: `nano my-playbook.yml`
 
-<img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG">
+![(https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG)
 
 Ansible hosts
 
- # /etc/ansible/hosts
+` # /etc/ansible/hosts
  [webservers]
  10.1.0.5 ansible_python_interpreter=/usr/bin/python3
  10.1.0.6 ansible_python_interpreter=/usr/bin/python3
  10.1.0.9 ansible_python_interpreter=/usr/bin/python3
 
  [elk]
- 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+ 10.0.0.5 ansible_python_interpreter=/usr/bin/python3`
 
 
 Ansible configuration

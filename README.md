@@ -1,10 +1,9 @@
 # curlyb00ts
-##AUTOMATED ELK STACK DEPLOYMENT
+# AUTOMATED ELK STACK DEPLOYMENT
 
 
 The files in this repository were used to configure the network depicted below.
 
-Project#1_Cloud_Computing.PNG
 
 <img width="364" alt="FINAL P1" src="https://user-images.githubusercontent.com/94266251/182843381-658a703e-b4f8-4787-bb87-a146ba43063e.PNG">
 
@@ -22,13 +21,16 @@ Project#1_Cloud_Computing.PNG
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .config and .yml file may be used to install only certain pieces of it, such as Filebeat.
  
 Ansible Playbook
+
 Command: nano my-playbook.yml
 
 <img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG">
 
 Ansible hosts
 
-Command: nano hostsAnsible configuration
+Ansible configuration
+
+Command: nano hosts
 
 
 <img width="234" alt="FINAL P3" src="https://user-images.githubusercontent.com/94266251/182843989-bfec1645-c6f5-4d9f-990e-2b52f8ed26e8.PNG">
@@ -159,17 +161,15 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 
 
-
-| Name          	| Function       	| IP Address    	| Operating System 	|   	
-|---------------	|----------------	|---------------	|------------------	|	|
-| Jumpbox       	| Gateway        	| 10.1.0.4      	| Linux            	|   	
-| Web-1         	| Web Server     	| 10.1.0.5      	| Linux            	|   	
-| Web-2         	| Web Server     	| 10.1.0.6      	| Linux            	|   	
-| Web-3         	| Web Server     	| 10.1.0.9      	| Linux            	|   	
-| ELK-VM        	| Elk Server     	| 10.0.0.5      	| Linux            	|   	|
-| Load Balancer 	| Load Balancer  	| 20.213.80.237 	| Linux            	|   	
-| Workstation   	| Access Control 	| Public IP     	| Linux            	|   	
-
+| Name           	| Function 	        |  IP Address                    	|   OS	  	
+|----------------	|---------------------	|---------------------------------------	|		
+| Jump  Box      	| Gateway               | 10.1.0.4 	 	                | Linux   	|
+| Web-1          	| Web Server            | 10.1.0.5               	        | Linux 
+| Web-2          	| Web Server            | 10.1.0.6               	        | Linux  	
+| Web-3         	| Web Server            | 10.1.0.9                	        | Linux  	
+| Elk-VM         	| Elk Server            | 10.1.0.5  	  	   	        | Linux
+| Load  Balancer 	| Load Balancer         | 20.213.80.237      	                | Linux
+| Workstation           | Access Control        | Public IP                             | Linux
 
 #Access Policies
 
@@ -291,7 +291,7 @@ sudo docker start quirky_payne (to start the container)
 
 sudo docker attach quirky_payne (to attach the container)
 
-cd /etc/ansible/ then ls and you see the files (.yml and .config) and directories
+cd /etc/ansible/ then ls and you see the files (.yml and .config) and directories)
 
 cd ansible-playbook install_elk_playbook.yml   (to install playbook)
 

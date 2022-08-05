@@ -160,6 +160,71 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Name</th>
+    <th class="tg-0pky">Function</th>
+    <th class="tg-0pky">IP Address</th>
+    <th class="tg-0pky">OS</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Jump Box</td>
+    <td class="tg-0pky">Gateway</td>
+    <td class="tg-0pky">10.1.0.4</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web-1</td>
+    <td class="tg-0pky">Web Server</td>
+    <td class="tg-0pky">10.1.0.5</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web-2</td>
+    <td class="tg-0pky">Web Server</td>
+    <td class="tg-0pky">10.1.0.6</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web-3</td>
+    <td class="tg-0pky">Web Server </td>
+    <td class="tg-0pky">10.1.0.9</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Elk-VM</td>
+    <td class="tg-0pky">Elk Server</td>
+    <td class="tg-0pky">10.1.0.5</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Load Balancer</td>
+    <td class="tg-0pky">Load Balancer</td>
+    <td class="tg-0pky">20.213.80.237</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Workstation</td>
+    <td class="tg-0pky">Access Control</td>
+    <td class="tg-0pky">Public IP</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+</tbody>
+</table>
+
+
+
 +---------------+----------------+---------------+-------+
 | Name          | Function       | IP Address    | OS    |
 +---------------+----------------+---------------+-------+

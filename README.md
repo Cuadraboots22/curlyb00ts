@@ -307,7 +307,7 @@ Command: `ansible-playbook install-elk.yml`
 
 For Filebeat download the playbook using this command:
 `curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml`
-Copy the /etc/ansible/files/filebeat-config.yml file to /etc/filebeat/filebeat-playbook.yml
+Copy the `/etc/ansible/files/filebeat-config.yml` file to `/etc/filebeat/filebeat-playbook.yml`
 Update the filebeat-playbook.yml file to include installer: `curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb`
 Update the filebeat-config.yml file when you’re in root @49d0faf9204b:/etc/ansible/files# then `nano filebeat-config.yml` (to make the update and save)
 Run the playbook using: ansible-playbook filebeat-playbook.yml and navigate to Kibana > Logs: add log data> system logs>5:Module Status>Check data to make sure that the installation worked.
@@ -316,15 +316,13 @@ For Metricbeat:
 
 Download Metricbat playbook with command: `curl -L -0 https://gist.githubusercontent.com/slape/58541585x1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat>/etc/ansible/files/metricbeat-config.yml`
 
-Copy the /etc/ansible/files/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml file to include installer: `curl -L -0 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amb64.deb`
+Copy the `/etc/ansible/files/files/metricbeat` file to `/etc/metricbeat/metricbeat-playbook.yml` file to include installer: `curl -L -0 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amb64.deb`
 
 Update the metricbeat file rename to metricbeat-config.yml you must be at root: root @49d0faf9204b:/etc/ansible/files# then nano metricbeat-config.yml
 Run the playbook, (ansible-playbook metricbeat-playbook.yml) and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked. Which URL do you navigate to in order to check that the ELK server is running?  http://20.210.88.153:5601/app/kibana
 
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files:
 
-
-Commands:
+Additional Commands:
 
 `ssh Red_Team_Admin@20.211.160.59` (to get into the Jumpbox)
 

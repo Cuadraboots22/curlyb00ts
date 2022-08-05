@@ -28,6 +28,16 @@ Command: `nano my-playbook.yml`
 
 Ansible hosts
 
+ # /etc/ansible/hosts
+ [webservers]
+ 10.1.0.5 ansible_python_interpreter=/usr/bin/python3
+ 10.1.0.6 ansible_python_interpreter=/usr/bin/python3
+ 10.1.0.9 ansible_python_interpreter=/usr/bin/python3
+
+ [elk]
+ 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+
+
 Ansible configuration
 
 Command: `nano hosts`

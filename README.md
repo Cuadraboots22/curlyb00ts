@@ -22,7 +22,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
  
 Ansible Playbook
 
-Command: nano my-playbook.yml
+Command: `nano my-playbook.yml`
 
 <img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG">
 
@@ -30,12 +30,12 @@ Ansible hosts
 
 Ansible configuration
 
-Command: nano hosts
+Command: `nano hosts`
 
 
 <img width="234" alt="FINAL P3" src="https://user-images.githubusercontent.com/94266251/182843989-bfec1645-c6f5-4d9f-990e-2b52f8ed26e8.PNG">
 
-Command: nano ansible.cfg
+Command: `nano ansible.cfg`
 
 <img width="233" alt="FINAL P4" src="https://user-images.githubusercontent.com/94266251/182845679-09b3bd78-6991-4b0a-a11a-fdf8f2232fe6.PNG">
 
@@ -64,7 +64,7 @@ Ansible Filebeat Playbook
 
 <img width="236" alt="FINAL P5" src="https://user-images.githubusercontent.com/94266251/182845707-957782b4-16e2-4640-bf51-bffe55a80041.PNG">
 
-Command: nano filebeat-playbook.yml
+Command: `nano filebeat-playbook.yml`
 
 <img width="239" alt="FINAL P6" src="https://user-images.githubusercontent.com/94266251/182845719-92c1a09f-28c9-40b6-8f3d-afd694295f39.PNG">
 
@@ -85,7 +85,7 @@ Run filebeat playbook
 
 Ansible Filebeat Config file
 
-Command: nano filebeat-config.yml
+Command: `nano filebeat-config.yml`
 
 
 <img width="236" alt="FINAL P9" src="https://user-images.githubusercontent.com/94266251/182845774-c204825d-1f8a-4acb-b1c2-275790a27406.PNG">
@@ -113,7 +113,7 @@ Command: nano filebeat-config.yml
 
 Ansible Metricbeat Playbook
 
-Command: nano metricbeat-playbook.yml
+Command: `nano metricbeat-playbook.yml`
 
 <img width="235" alt="FINAL P10" src="https://user-images.githubusercontent.com/94266251/182845791-5cc6512d-4eb1-4b3d-81c9-f692fdd9e1ad.PNG">
 
@@ -160,14 +160,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
+
 <table class="tg">
 <thead>
   <tr>
@@ -256,7 +249,7 @@ A summary of the access policies in place can be found in the table below.
 Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration with Ansible is that it has full access to our virtual network and connects with our new VM without using the command apt-get.
+What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration with Ansible is that it has full access to our virtual network and connects with our new VM without using the command `apt-get`.
 
 The playbook implements the following tasks:
 Install Docker.io and pip3
@@ -288,7 +281,7 @@ Update the path with the name of your screenshot of docker ps output.
 Target Machines & Beats
 This ELK server is configured to monitor the following machines: 
 
- List the IP addresses of the machines you are monitoring:Web-1: 10.1.0.5; Web-2: 10.1.0.6, and Web-3: 10.1.0.9
+List the IP addresses of the machines you are monitoring: Web-1: 10.1.0.5; Web-2: 10.1.0.6, and Web-3: 10.1.0.9
 
 We have installed the following Beats on these machines:Elk Server, Web-1, Web-2 and Web-3
 Specify which Beats you successfully installed Filebeat and Metricbeat
@@ -310,20 +303,20 @@ Which file is the playbook?
 
 For ELK VM Configuration:
 Copy the ansible ELK installation and VM Configuration
-Command: ansible-playbook install-elk.yml
+Command: `ansible-playbook install-elk.yml`
 
 For Filebeat download the playbook using this command:
-curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
+`curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml`
 Copy the /etc/ansible/files/filebeat-config.yml file to /etc/filebeat/filebeat-playbook.yml
-Update the filebeat-playbook.yml file to include installer: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
-Update the filebeat-config.yml file when you’re in root @49d0faf9204b:/etc/ansible/files# then nano filebeat-config.yml (to make the update and save)
+Update the filebeat-playbook.yml file to include installer: `curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb`
+Update the filebeat-config.yml file when you’re in root @49d0faf9204b:/etc/ansible/files# then `nano filebeat-config.yml` (to make the update and save)
 Run the playbook using: ansible-playbook filebeat-playbook.yml and navigate to Kibana > Logs: add log data> system logs>5:Module Status>Check data to make sure that the installation worked.
 
 For Metricbeat:
 
-Download Metricbat playbook with command: curl -L -0 https://gist.githubusercontent.com/slape/58541585x1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat>/etc/ansible/files/metricbeat-config.yml
+Download Metricbat playbook with command: `curl -L -0 https://gist.githubusercontent.com/slape/58541585x1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat>/etc/ansible/files/metricbeat-config.yml`
 
-Copy the /etc/ansible/files/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml file to include installer: curl -L -0 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amb64.deb
+Copy the /etc/ansible/files/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml file to include installer: `curl -L -0 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amb64.deb`
 
 Update the metricbeat file rename to metricbeat-config.yml you must be at root: root @49d0faf9204b:/etc/ansible/files# then nano metricbeat-config.yml
 Run the playbook, (ansible-playbook metricbeat-playbook.yml) and navigate to Kibana > Add Metric Data > Docker Metrics > Module Status to check that the installation worked. Which URL do you navigate to in order to check that the ELK server is running?  http://20.210.88.153:5601/app/kibana
@@ -333,47 +326,47 @@ As a **Bonus**, provide the specific commands the user will need to run to downl
 
 Commands:
 
-ssh Red_Team_Admin@20.211.160.59 (to get into the Jumpbox)
+`ssh Red_Team_Admin@20.211.160.59` (to get into the Jumpbox)
 
-ssh Red_Team_Admin@10.1.0.5  (to get into the ELK-VM)
+`ssh Red_Team_Admin@10.1.0.5`  (to get into the ELK-VM)
 
-ssh Red_Team_Admin@10.1.0.6 (to access VM-2)
+`ssh Red_Team_Admin@10.1.0.6` (to access VM-2)
 
-ssh Red_Team_Admin@10.1.0.9 (to access VM-9)
+`ssh Red_Team_Admin@10.1.0.9` (to access VM-9)
 
-sudo docker start elk (to start elk)
+`sudo docker` start elk (to start elk)
 
-sudo docker ps (to look for container)
+`sudo docker ps` (to look for container)
 
-sudo docker start quirky_payne (to start the container)
+`sudo docker start quirky_payne` (to start the container)
 
-sudo docker attach quirky_payne (to attach the container)
+`sudo docker attach quirky_payne` (to attach the container)
 
-cd /etc/ansible/ then ls and you see the files (.yml and .config) and directories)
+`cd /etc/ansible/` then `ls` and you see the files (.yml and .config) and directories)
 
-cd ansible-playbook install_elk_playbook.yml   (to install playbook)
+`cd ansible-playbook install_elk_playbook.yml`   (to install playbook)
 
-cd /etc/ansible/roles 
+`cd /etc/ansible/roles` 
 
-cd ansible-playbook install_filebeat-playbook.yml (to install playbook filebeat playbook)
+`cd ansible-playbook install_filebeat-playbook.yml` (to install playbook filebeat playbook)
 
-cd ansible-playbook install_metricbeat-playblook.yml (to install playbook metricbeat playbook)
+`cd ansible-playbook install_metricbeat-playblook.yml` (to install playbook metricbeat playbook)
 
-ssh-keygen to create ssh key
+`ssh-keygen` (to create ssh key)
 
-sudo apt-get update (to update all packages)
+`sudo apt-get update` (to update all packages)
 
-ansible -m ping all to check the connection of ansible containers
+`ansible -m ping` (all to check the connection of ansible containers)
 
-sudo apt install docker.io (to install docker application)
+`sudo apt install docker.io` (to install docker application)
 
-sudo service docker start (to start the docker application)
+`sudo service docker start` (to start the docker application)
 
-systemctl status docker (to check the status of the docker application)
+`systemctl status docker` (to check the status of the docker application)
 
-sudo docker pull cybersecurity/ansible (to download the docker file)
+`sudo docker pull cybersecurity/ansible` (to download the docker file)
 
-sudo docker run -ti cybersecurity/bash (to run and create a docker image)
+`sudo docker run -ti cybersecurity/bash` (to run and create a docker image)
 
 
 

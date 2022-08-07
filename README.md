@@ -23,9 +23,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
  
 Ansible Playbook
 
-Command: `nano my-playbook.yml`
+Command: `nano my-playbook.yml'
 
-![(https://user-images.githubusercontent.com/94266251/182843728-0cd3c0c0-3b5f-4e2c-9f6f-bd7811530af6.PNG)
+<img width="353" alt="FINAL P2" src="https://user-images.githubusercontent.com/94266251/183269900-1269183b-9ed2-4755-b08b-0678c6717c2b.PNG">
+
+
 
 Ansible hosts
 
